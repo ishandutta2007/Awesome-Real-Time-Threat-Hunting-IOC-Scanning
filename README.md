@@ -22,6 +22,7 @@
   <a href="#-feature-matrix">Feature Matrix</a> •
   <a href="#-key-selection-criteria">Selection Criteria</a> •
   <a href="#-star-history">Star History</a> •
+  <a href="#-support--sponsor">Support</a> •
   <a href="#-contributing">Contributing</a>
 </p>
 
@@ -37,6 +38,7 @@
 - [📊 Feature Matrix & Comparison](#-feature-matrix--comparison)
 - [🎯 Key Selection Criteria](#-key-selection-criteria)
 - [📈 Star History](#-star-history)
+- [💖 Support & Sponsor](#-support--sponsor)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -118,6 +120,21 @@ When building a modern threat hunting and IOC scanning capability, consider the 
 ## 📈 Star History
 
 [![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsor
+
+Thank you so much for exploring and using this collection! Maintaining comprehensive cybersecurity threat hunting resources takes continuous research, curation, and verification.
+
+If you find this repository valuable, please consider supporting the project:
+- ⭐ **Star this repository** on GitHub to help others discover it!
+- 🍴 **Fork it** and contribute new tools, IOC feeds, or hunting rules.
+- 📢 **Share it** with fellow SOC analysts, detection engineers, and infosec communities on LinkedIn, X/Twitter, or Reddit.
+- ☕ **Buy me a coffee / Sponsor:** Support ongoing open-source curation directly through the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+[![Sponsor ishandutta2007](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/ishandutta2007)
+<a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" /></a>
 
 ---
 
