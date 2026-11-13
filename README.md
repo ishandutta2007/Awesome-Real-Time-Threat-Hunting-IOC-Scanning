@@ -1,132 +1,145 @@
-# Awesome-Real-Time-Threat-Hunting-IOC-Scanning
+<div align="center">
 
-# Awesome Real-Time Threat Hunting & IOC Scanning
+<img src="./assets/banner.svg" alt="Awesome Real-Time Threat Hunting &amp; IOC Scanning Banner" width="100%" />
 
-> A curated list of top Real-Time Threat Hunting and IOC Scanning platforms — both SaaS/Hosted commercial threat intelligence and hunting services and open-source alternatives for proactive adversary detection and indicator matching.
-> 🌟 Star this repo if you find it useful! 🌟
+# 🛡️ Awesome Real-Time Threat Hunting & IOC Scanning 🔍
+
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
+<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning?style=social)](https://github.com/ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning/stargazers)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+
+<p align="center">
+  <strong>Curated directory of real-time threat hunting platforms, automated indicator of compromise (IOC) scanners, YARA rule engines, threat intelligence platforms (TIP), and SOC defense tools.</strong>
+</p>
+
+<p align="center">
+  <a href="#-sector-overview--market-dynamics">Sector Overview</a> •
+  <a href="#-saas--hosted-platforms">SaaS Platforms</a> •
+  <a href="#-open-source-software">Open Source Tools</a> •
+  <a href="#-feature-matrix">Feature Matrix</a> •
+  <a href="#-key-selection-criteria">Selection Criteria</a> •
+  <a href="#-star-history">Star History</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [CrowdStrike Falcon Overwatch](#crowdstrike-falcon-overwatch)
-  - [Microsoft Defender Experts for Hunting](#microsoft-defender-experts-for-hunting)
-  - [SentinelOne Threat Hunting](#sentinelone-threat-hunting)
-  - [Red Canary](#red-canary)
-  - [Rapid7 Threat Hunting](#rapid7-threat-hunting)
-  - [Druva Threat Hunting](#druva-threat-hunting)
-- [Open-Source Software](#-open-source-software)
-  - [MISP](#misp)
-  - [Sigma](#sigma)
-  - [TheHive & Cortex](#thehive--cortex)
-  - [TraceForge](#traceforge)
-  - [Pulse Intelligence](#pulse-intelligence)
-  - [Anubi](#anubi)
-  - [GitHub IOC Scanner](#github-ioc-scanner)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source Software](#-open-source-software)
+- [📊 Feature Matrix & Comparison](#-feature-matrix--comparison)
+- [🎯 Key Selection Criteria](#-key-selection-criteria)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 🌐 Sector Overview & Market Dynamics
 
-Commercial, cloud-hosted Real-Time Threat Hunting and IOC Scanning platforms. These are not open-source but are included as reference points for feature comparison.
-
-### CrowdStrike Falcon Overwatch
-**Type:** Managed threat hunting with human-led adversary detection  
-Falcon Overwatch is a 24/7 managed threat hunting service that combines human expertise with the Falcon platform's telemetry and AI. It proactively hunts for adversary activity that automated detections miss, with threat intelligence from CrowdStrike's adversary research.
-
-### Microsoft Defender Experts for Hunting
-**Type:** Proactive hunting service on Microsoft telemetry  
-Defender Experts for Hunting provides Microsoft-led proactive threat hunting across endpoints, identities, email, and cloud apps. It surfaces human-verified findings and provides guided response recommendations, leveraging Microsoft's threat intelligence and signal depth.
-
-### SentinelOne Threat Hunting
-**Type:** Autonomous hunting with Storyline correlation  
-SentinelOne provides threat hunting capabilities through its Singularity platform, with Storyline visualization connecting related events across endpoints. Its autonomous agents can isolate threats and provide forensic context for manual hunting.
-
-### Red Canary
-**Type:** Managed detection and response with threat hunting  
-Red Canary is a leading MDR provider that combines automated detection with human threat hunting and response. It is known for its detection engineering depth and transparent communication of findings.
-
-### Rapid7 Threat Hunting
-**Type:** Hunting within Rapid7's security platform  
-Rapid7 provides threat hunting capabilities through its InsightIDR and broader security platform, with detection rules, UEBA, and investigation workflows. It is often paired with Rapid7's vulnerability management and incident response services.
-
-### Druva Threat Hunting
-**Type:** Data protection telemetry for threat hunting  
-Druva's Cyber Resiliency features include threat hunting capabilities over backup data, with ransomware detection, anomaly analysis, and audit trails. It allows SecOps teams to investigate suspicious activity across protected workloads, with view-only administrator roles for separation of duties.
+The global threat hunting and threat intelligence platform (TIP) market is estimated at **$15B to $20B+** (with Threat Intelligence alone projected to reach ~$31B by 2030 at a 15–22% CAGR, and dedicated Threat Hunting scaling towards $14B–$18B+ at an ~18% CAGR). The market exhibits **moderate fragmentation**: high-scale platform conglomerates (Microsoft, CrowdStrike, SentinelOne) dominate holistic endpoint telemetry and SIEM/XDR data gravity, while an innovative and distributed ecosystem of specialized MDR vendors, autonomous hunting engines, and open-source intelligence repositories (MISP, Sigma, OpenCTI) address custom telemetry, adversary-specific hunts, and multi-cloud sovereignty.
 
 ---
 
-## 🟩 Open-Source Software
+## 🏢 SaaS / Hosted Platforms
 
-Self-hosted, community-driven Real-Time Threat Hunting and IOC Scanning tools. The open-source ecosystem is anchored by **MISP** and **Sigma** as the foundational standards, with complementary tools for case management, investigation, and specialized scanning.
+Enterprise-grade, managed threat hunting and continuous IOC detection services. The table below is ordered by company valuation and enterprise market capitalization in descending order.
 
-### MISP
-**Stack:** PHP / MySQL | **License:** AGPL-3.0  
-MISP (Malware Information Sharing Platform) is the most widely deployed open-source threat intelligence platform, focused on **IOC storage, correlation, and sharing** . It provides an efficient IOC database, automatic correlation between attributes (including fuzzy hashing and CIDR block matching), flexible data models for complex objects, and built-in sharing with flexible distribution models . It supports export to IDS formats (Suricata, Snort, Zeek), STIX 1/2, OpenIOC, and more, with PyMISP for Python integration . **Best for:** Organizations needing a proven, community-standard platform for IOC collection, correlation, and intelligence sharing with partners and sector communities.
-
-### Sigma
-**Stack:** YAML rules / Python (pySigma) | **License:** Open Source (SigmaHQ)  
-Sigma is a **generic signature format for SIEM systems** — "for log files what Snort is for network traffic and YARA is for files" . The SigmaHQ repository offers **more than 3,000 detection rules** across categories: Generic Detection, Threat Hunting, Emerging Threat, Compliance, and Placeholder rules . Threat Hunting rules are broader in scope, meant to give analysts a starting point to hunt for suspicious activity, while Emerging Threat rules cover specific timely campaigns and zero-days . Rules are vendor-agnostic and convertible to SIEM query languages via Sigma CLI, sigconverter.io, or pySigma . **Best for:** Detection engineers and threat hunters wanting a community-maintained, vendor-agnostic rule library for log-based hunting across any SIEM.
-
-### TheHive & Cortex
-**Stack:** Scala / Elasticsearch / Cassandra | **License:** AGPL-3.0  
-TheHive is a **Security Incident Response Platform** for SOC, CSIRT, and CERT teams, offering case management, task workflows, observable management, and real-time collaboration [citation:4]. It is tightly integrated with MISP for threat intelligence sharing [citation:4]. **Cortex** provides automated enrichment and analysis of observables (IOCs) through analyzers like VirusTotal, AbuseIPDB, MISP, and OTX [citation:4][citation:9]. Together they operationalize threat intelligence: MISP/Sigma for detection logic and IOC management, TheHive for case creation and response, and Cortex for automated enrichment . **Best for:** SOC and CSIRT teams wanting to operationalize threat hunting findings with case management and automated IOC enrichment.
-
-### TraceForge
-**Stack:** Python / Go / SQLite | **License:** Open Source (PyPI)  
-TraceForge is a **local CLI toolkit for investigative workflows**, explicitly built for DFIR, OSINT, and authorized security research [citation:1]. Key threat hunting features include **IOC extraction and defanging** (IPs, domains, hashes, URLs), evidence hashing with chain-of-custody, timeline processing, filesystem baselining and diffs, and **multi-format exports** including STIX 2.1 and MISP [citation:1]. It includes an external tool catalog with profile-based setup, and runs cross-platform (macOS, Linux, Termux) [citation:1]. **Best for:** DFIR analysts and investigators wanting a local, privacy-preserving toolkit for IOC extraction, evidence handling, and timeline analysis without a server dependency.
-
-### Pulse Intelligence
-**Stack:** Next.js / PostgreSQL / Redis | **License:** Open Source (GitHub)  
-Pulse Intelligence is an **open-source, self-hosted threat intelligence platform** for CTI analysts and SOC teams [citation:11]. It tracks threat actors, campaigns, IOCs, CVEs, and ATT&CK mappings, with feed ingestion from CISA KEV, NVD, FIRST EPSS, abuse.ch, and OTX [citation:11]. Features include **IOC enrichment** (OTX, AbuseIPDB, VirusTotal with Redis-backed quota controls), **saved threat hunts** over indicator fields with alerting, and **export to CSV, STIX 2.1, MISP JSON, and Snort/Suricata rules** [citation:11]. It also generates scheduled Markdown reports from new indicators and hunt alerts [citation:11]. **Best for:** CTI analysts wanting a self-hosted platform that combines feed ingestion, enrichment, hunting, and export in one workspace.
-
-### Anubi
-**Stack:** Python / YARA | **License:** Open Source (GitHub)  
-Anubi is a **portable IOC/hash scanner and layer-4 IDS** that combines five engines: IOC scanner (YARA rules on filesystem), hash scanner, IP checker (network monitoring), filesystem modification monitor (Voyeur), and SBOM generation [citation:12]. It uses a prepared rule set generated daily, with support for custom rules, and provides a web UI and API for interaction [citation:12]. **Best for:** Analysts wanting a lightweight, portable scanner that applies YARA and hash rules to local filesystems alongside network IP monitoring, without deploying a full SIEM.
-
-### GitHub IOC Scanner
-**Stack:** Python | **License:** Open Source (PyPI)  
-GitHub IOC Scanner is a CLI tool for **scanning GitHub repositories for IOCs in package dependencies**, covering npm, pip, RubyGems, Composer, Go modules, and Cargo [citation:2]. It includes **2,900+ IOC definitions** for known malicious packages (typosquatting, dependency confusion, compromised packages), with parallel processing, intelligent caching, and real-time progress [citation:2]. It supports organization-wide, team-specific, or individual repository scanning [citation:2]. **Best for:** Security teams wanting to detect supply chain compromises (malicious packages, typosquatting) in their GitHub organizations, particularly for dependency-based attacks.
+| 🏢 Platform | 💰 Company Valuation / Revenue | 🏷️ Starting Pricing Tier | 🎁 Free Tier / Trial Limit | 🎯 Core Threat Hunting Capabilities |
+|---|---|---|---|---|
+| **[Microsoft Defender Experts for Hunting](https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-hunting)** | **$3.1T+ Valuation** (Microsoft Security revenue >$20B/yr) | Starting at **$3.00 to $4.00/user/month** add-on license (requires base prerequisite Microsoft 365 E5 or Defender for Endpoint Plan 2 at ~$57/user/month) | **30-day free trial** of Microsoft 365 E5 Enterprise Suite (covers up to 25 user licenses with full Defender XDR telemetry) | Proactive cross-domain hunting across endpoint, identity, Office 365 email, and cloud apps directly backed by Microsoft threat researchers. |
+| **[CrowdStrike Falcon Overwatch](https://www.crowdstrike.com/products/threat-intelligence/falcon-overwatch-managed-threat-hunting/)** | **~$80B+ Market Cap** (~$3.9B ARR) | Starting at **$59.99/device/year** (Falcon Go tier); Falcon Enterprise / Overwatch tiers typically start at **$180+/device/year** depending on volume | **15-day free trial** of Falcon Prevent/Insight (up to 50 endpoints with full cloud dashboard access, no credit card required) | 24/7 human-in-the-loop managed adversary hunting combining Falcon telemetry, graph analytics, and real-time behavioral IOC hunting. |
+| **[SentinelOne Singularity Threat Hunting](https://www.sentinelone.com/platform/singularity-threat-hunting/)** | **~$7.5B to $8.2B Market Cap** (~$1.15B ARR) | Singularity Core starts at **$70.00/endpoint/year**; Singularity Complete with deep threat hunting starts at **$180.00/endpoint/year** | **30-day proof-of-concept (PoC) evaluation** with full enterprise Singularity EDR/XDR suite access across designated test endpoints | Autonomous endpoint threat detection, Storyline distributed process correlation, and sub-second IOC query execution. |
+| **[Rapid7 InsightIDR Threat Hunting](https://www.rapid7.com/products/insightidr/)** | **~$2.5B Market Cap** (~$800M ARR) | InsightIDR cloud SIEM starts at **$2,156/month** (billed annually for 500 assets, roughly **$4.31/asset/month**) | **30-day full-featured free trial** of InsightIDR (includes cloud ingestion, UEBA, prebuilt Sigma/YARA hunting rules, and log analytics) | Integrated cloud SIEM and proactive detection workflows pairing user and entity behavior analytics (UEBA) with network traffic analysis. |
+| **[Druva Cyber Resiliency Threat Hunting](https://www.druva.com/solutions/threat-hunting)** | **~$2.0B Valuation** (~$250M+ ARR) | Data protection and resiliency suite starts at **$2.50 to $8.00/user/month** (or ~$0.08 to $0.15/GB/month depending on backup volume) | **30-day free trial** with up to 1 TB of cloud storage protection and complete ransomware anomaly and threat hunting scanner access | Out-of-band threat hunting through immutable cloud backups, preventing malware reinfection and identifying dormant IOCs prior to restoration. |
+| **[Red Canary MDR Threat Hunting](https://redcanary.com/)** | **$675M Valuation** (Acquired by Zscaler in 2025; ~$140M+ ARR) | EDR-agnostic MDR starts at **$120.00/endpoint/year**, **$100.00/user/year**, and **$250.00/cloud resource/year** (volume discounts available) | **14-day guided sandbox PoC trial** with custom detection engineering assessment and active simulated telemetry ingestion | Human-driven managed detection engineering, continuous threat hunting mapped to MITRE ATT&CK, and transparent behavioral analysis. |
 
 ---
 
-## 📊 Comparison at a Glance
+## 💻 Open-Source Software
 
-| Software | License | Stack | IOC Scanning | Detection Rules | Case Management | Self-Hosted | Best For |
-|----------|---------|-------|--------------|-----------------|-----------------|-------------|----------|
-| **CrowdStrike Overwatch** | Proprietary | Cloud | ✅ | ✅ Human-led | (Platform) | ❌ | 24/7 managed hunting |
-| **Microsoft Defender Experts** | Proprietary | Cloud | ✅ | ✅ | (Platform) | ❌ | Microsoft telemetry hunting |
-| **Druva** | Proprietary | Cloud | ✅ | ✅ Ransomware | (Audit trails) | ❌ | Backup data threat hunting |
-| **MISP** | AGPL-3.0 | PHP/MySQL | ✅ Deep | ❌ (IOC store) | ❌ | ✅ | IOC correlation + sharing |
-| **Sigma** | Open Source | YAML/pySigma | ❌ (Rules) | ✅ 3,000+ rules | ❌ | ✅ | Vendor-agnostic hunting rules |
-| **TheHive & Cortex** | AGPL-3.0 | Scala/Elastic | ✅ (Enrichment) | ❌ | ✅ | ✅ | Operationalize hunting findings |
-| **TraceForge** | Open Source | Python/Go | ✅ Extraction | ❌ | ✅ (Local) | ✅ | DFIR IOC extraction + evidence |
-| **Pulse Intelligence** | Open Source | Next.js/Postgres | ✅ Enrichment | ✅ ATT&CK | ✅ (Hunts) | ✅ | CTI feed + hunt + export |
-| **Anubi** | Open Source | Python/YARA | ✅ YARA + hash | ✅ YARA rules | ❌ | ✅ | Portable filesystem/network scanning |
-| **GitHub IOC Scanner** | Open Source | Python | ✅ Supply chain | ✅ 2,900+ IOCs | ❌ | ✅ | GitHub dependency compromise |
+Community-governed, self-hosted IOC matching engines, signature databases, and threat hunting platforms. Sorted by GitHub stargazer count in descending order.
+
+| 💻 Repository | ⭐ Stars | 📜 License | 🛠️ Architecture / Stack | 🎯 Target Hunting Focus |
+|---|---|---|---|---|
+| **[SigmaHQ/sigma](https://github.com/SigmaHQ/sigma)** | [![GitHub stars](https://img.shields.io/github/stars/SigmaHQ/sigma?style=social&color=white)](https://github.com/SigmaHQ/sigma/stargazers) | Open Source | YAML Rules / pySigma Python engine | Generic, vendor-agnostic signature format for SIEM & log systems with 3,000+ threat hunting rules. |
+| **[OpenCTI-Platform/opencti](https://github.com/OpenCTI-Platform/opencti)** | [![GitHub stars](https://img.shields.io/github/stars/OpenCTI-Platform/opencti?style=social&color=white)](https://github.com/OpenCTI-Platform/opencti/stargazers) | Apache-2.0 | TypeScript / GraphQL / Elastic / Redis | Unified enterprise cyber threat intelligence platform for managing, structuring, and hunting IOCs/TTPs. |
+| **[VirusTotal/yara](https://github.com/VirusTotal/yara)** | [![GitHub stars](https://img.shields.io/github/stars/VirusTotal/yara?style=social&color=white)](https://github.com/VirusTotal/yara/stargazers) | BSD-3-Clause | C / Python bindings | The de facto industry-standard pattern matching Swiss Army knife for binary inspection and IOC file hunting. |
+| **[MISP/MISP](https://github.com/MISP/MISP)** | [![GitHub stars](https://img.shields.io/github/stars/MISP/MISP?style=social&color=white)](https://github.com/MISP/MISP/stargazers) | AGPL-3.0 | PHP / MySQL / Python (PyMISP) | Core open-source threat sharing platform for IOC aggregation, automated correlation, and community feeds. |
+| **[Yara-Rules/rules](https://github.com/Yara-Rules/rules)** | [![GitHub stars](https://img.shields.io/github/stars/Yara-Rules/rules?style=social&color=white)](https://github.com/Yara-Rules/rules/stargazers) | GPL-2.0 | YARA Signature Sets | Massive community repository of curated YARA rules for malware classification, ransomware, and memory scans. |
+| **[TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive)** | [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white)](https://github.com/TheHive-Project/TheHive/stargazers) | AGPL-3.0 | Scala / Play / Cassandra / Elasticsearch | Scalable Security Incident Response Platform (SIRP) closely linked with MISP and Cortex for IOC case handling. |
+| **[Neo23x0/Loki](https://github.com/Neo23x0/Loki)** | [![GitHub stars](https://img.shields.io/github/stars/Neo23x0/Loki?style=social&color=white)](https://github.com/Neo23x0/Loki/stargazers) | GPL-3.0 | Python / YARA / MD5-SHA256 hashes | Simple, portable IOC and incident response scanner matching YARA rules, hashes, filenames, and C2 IPs. |
+| **[Neo23x0/signature-base](https://github.com/Neo23x0/signature-base)** | [![GitHub stars](https://img.shields.io/github/stars/Neo23x0/signature-base?style=social&color=white)](https://github.com/Neo23x0/signature-base/stargazers) | CC-BY-NC-4.0 | YARA / IOC Signatures / Regex | Comprehensive signature database containing thousands of IOCs, YARA rules, and hash databases for DFIR scans. |
+| **[TheHive-Project/Cortex](https://github.com/TheHive-Project/Cortex)** | [![GitHub stars](https://img.shields.io/github/stars/TheHive-Project/Cortex?style=social&color=white)](https://github.com/TheHive-Project/Cortex/stargazers) | AGPL-3.0 | Scala / Python analyzers | Automated observable analysis and active response engine querying 100+ threat intelligence services. |
+| **[Neo23x0/Fenrir](https://github.com/Neo23x0/Fenrir)** | [![GitHub stars](https://img.shields.io/github/stars/Neo23x0/Fenrir?style=social&color=white)](https://github.com/Neo23x0/Fenrir/stargazers) | GPL-3.0 | Bash / Posix shell | Simple, ultra-lightweight Bash IOC scanner for Unix/Linux systems requiring zero third-party dependencies. |
+| **[cisagov/ioc-scanner](https://github.com/cisagov/ioc-scanner)** | [![GitHub stars](https://img.shields.io/github/stars/cisagov/ioc-scanner?style=social&color=white)](https://github.com/cisagov/ioc-scanner/stargazers) | CC0-1.0 | Python | Official CISA lightweight file-system scanner for searching endpoints and servers for designated IOCs. |
+| **[kavat/anubi](https://github.com/kavat/anubi)** | [![GitHub stars](https://img.shields.io/github/stars/kavat/anubi?style=social&color=white)](https://github.com/kavat/anubi/stargazers) | GPL-3.0 | Python / YARA / SQLite | Portable hash and YARA scanner with layer-4 network monitoring and daily threat feed updating. |
+| **[paman7647/TraceForge](https://github.com/paman7647/TraceForge)** | [![GitHub stars](https://img.shields.io/github/stars/paman7647/TraceForge?style=social&color=white)](https://github.com/paman7647/TraceForge/stargazers) | MIT License | Python / Go / SQLite | Local-first CLI toolkit for DFIR analysts; performs IOC extraction, defanging, evidence hashing, and STIX export. |
+
+---
+
+## 📊 Feature Matrix & Comparison
+
+| Solution | Deployment | Real-Time Telemetry | IOC Ingestion | Custom Hunting Rules | Automated Enrichment | Incident Response Integration |
+|---|---|---|---|---|---|---|
+| **Microsoft Defender Experts** | SaaS Cloud | ✅ Streaming XDR | ✅ Cloud Sync | ✅ KQL Hunting | ✅ Native Graph | ✅ Auto-Remediation |
+| **CrowdStrike Falcon Overwatch** | SaaS Cloud | ✅ Kernel Agent | ✅ Threat Graph | ✅ Falcon Fusion | ✅ CrowdStrike Intel | ✅ Real-Time Response |
+| **SentinelOne Singularity** | SaaS Cloud | ✅ Real-time Storyline | ✅ Deep Visibility | ✅ STAR Engine | ✅ Autonomous Context | ✅ 1-Click Rollback |
+| **Rapid7 InsightIDR** | SaaS Cloud | ✅ Log Streaming | ✅ Threat Feeds | ✅ Attacker Behavior | ✅ Insight Platform | ✅ Automation Workflows |
+| **Druva Threat Hunting** | SaaS Cloud | ✅ Backup Telemetry | ✅ Backup Hashes | ✅ Ransomware Signatures | ✅ Air-gapped Metadata | ✅ Quarantine & Clean Restore |
+| **Red Canary** | SaaS MDR | ✅ Multi-EDR Telemetry| ✅ Cloud Sync | ✅ Custom Behavioral | ✅ Human Analyst Intel | ✅ Coordinated Response |
+| **MISP** | Self-Hosted | ❌ Batch Feeds | ✅ Deep Correlation | ❌ Attribute Store | ✅ PyMISP Integrations | ⚠️ Via TheHive/SIEM |
+| **OpenCTI** | Self-Hosted | ⚠️ Event Bus | ✅ STIX2 Standards | ✅ Rule Engine | ✅ Connectors Ecosystem | ⚠️ Via Case Templates |
+| **Sigma** | Self-Hosted | ❌ Rule Spec | ❌ Query Syntax | ✅ Universal Rules | ❌ Rule Catalog Only | ⚠️ Export to SIEM |
+| **VirusTotal/YARA** | CLI / Lib | ❌ Filesystem Scan | ✅ Binary Signatures | ✅ Complex Matching | ❌ Standalone Library | ⚠️ Integrable with EDR |
+| **TheHive & Cortex** | Self-Hosted | ❌ SOC Ingestion | ✅ Observables DB | ❌ Workflow Logic | ✅ 100+ Cortex Analyzers| ✅ Full SIRP Workflow |
+| **Neo23x0 Loki / Fenrir** | Host CLI | ❌ Point-in-time | ✅ Local IOC DB | ✅ YARA & Hash Rules | ❌ Offline Execution | ❌ Manual Triage |
+
+---
+
+## 🎯 Key Selection Criteria
+
+When building a modern threat hunting and IOC scanning capability, consider the following trade-offs:
+
+1. **Detection Speed & Telemetry Gravity:** Kernel-level streaming agents (CrowdStrike, SentinelOne) provide real-time behavioral telemetry, whereas open-source tools like Loki and Fenrir are ideal for scheduled compromise assessments or incident response triage where agents cannot be deployed.
+2. **Rule Portability vs. Proprietary Query Languages:** Using vendor-neutral formats such as **Sigma** and **YARA** prevents lock-in to proprietary SIEM syntax (like KQL or SPL) and enables seamless sharing across collaborative defensive alliances.
+3. **Intelligence Sharing Standards:** Systems adopting **STIX 2.1** and **MISP data models** (such as OpenCTI and MISP) streamline interoperability between intelligence producers, threat sharing ISACs, and downstream defense platforms.
+4. **Air-Gapped & Backup Scanning:** Resiliency tools like **Druva** inspect secondary snapshot storage out-of-band to catch dormant persistence mechanisms without creating production endpoint overhead.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Real-Time-Threat-Hunting-IOC-Scanning&type=date&legend=top-left)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Real-Time Threat Hunting or IOC Scanning tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! To contribute:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **foundational standards** (MISP for IOC correlation and sharing, Sigma for vendor-agnostic detection rules), **operational platforms** (TheHive for case management, Pulse Intelligence for feed ingestion and hunting), and **specialized scanners** (TraceForge for DFIR IOC extraction, Anubi for portable YARA/hash scanning, GitHub IOC Scanner for supply chain compromise). **MISP** and **Sigma** are the two projects that underpin most open-source threat hunting workflows — MISP for the intelligence layer and Sigma for the detection logic . Commercial platforms like CrowdStrike Overwatch and Microsoft Defender Experts remain differentiated by human-led hunting at scale and proprietary adversary intelligence that open-source tools cannot replicate.
+1. 🍴 Fork this repository.
+2. 🌿 Create your feature branch (`git checkout -b feature/cool-hunting-tool`).
+3. 📝 Add the project following our tabular or bulleted format with verified repository links, licensing, and capabilities.
+4. 🚀 Commit your changes (`git commit -m 'Add Awesome New IOC Scanner'`).
+5. 📤 Push to the branch (`git push origin feature/cool-hunting-tool`).
+6. 🎯 Open a Pull Request!
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This collection is distributed under the [Creative Commons Zero v1.0 Universal License (CC0-1.0)](https://creativecommons.org/publicdomain/zero/1.0/). Listed commercial products and open-source tools remain copyrighted under their respective creators and proprietary/open-source licenses.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+  <sub>Built with ❤️ for cybersecurity analysts, SOC operators, and detection engineers worldwide.</sub>
+</div>
